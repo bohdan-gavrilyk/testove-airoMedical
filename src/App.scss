@@ -1,3 +1,92 @@
-.starter {
-  font-size: 18px;
+.recipe__container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  padding: 20px 15px;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  &__img {
+    object-fit: cover;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+
+  &__name {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__desc {
+    font-size: 14px;
+  }
+}
+
+.selected {
+  border: 1px solid #000;
+}
+.button {
+  position: fixed;
+  font-size: 16px;
+  line-height: 40px;
+  border-radius: 40px;
+  padding: 0 10px;
+  top: 10px;
+  right: 50px;
+}
+
+.details {
+  display: flex;
+  column-gap: 25px;
+  padding: 25px;
+  &__link {
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+    flex-shrink: 0;
+    &:hover {
+      color: #555;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  &__img {
+    margin-right: 20px;
+    width: 300px;
+    img {
+      width: 100%;
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__inf {
+    flex-grow: 1;
+    font-size: 18px;
+    &__name {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    &__description {
+      color: #555;
+      margin-bottom: 10px;
+    }
+  }
 }

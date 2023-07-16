@@ -1,3 +1,4 @@
+> Here is [the working example](https://bohdan-gavrilyk.github.io/testove-airoMedical/)
 Recipe Beers App
 Welcome to the Recipe Beers app! This app allows you to browse and explore a list of beer recipes.
 
